@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nur Falah Abdurrozaq</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body onload="waktu()">
+    
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">NUR FALAH ABDURROZAQ</a></h1>
+            <ul>
+                <li class="active"><a href="#">HOME</a></li><li><a href="#profil">PROFIL</a></li><li><a href="#aboutme">TENTANG SAYA</a><ul><li><a href="#education">PENDIDIKAN</a></li><li><a href="#skill">KEMEMPUAN</a></li><li><a href="#exp">PENGALAMAN</a></li></ul></li><li><a href="#contact">KONTAK</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner" id="banner">
+        <div class="profil">
+            <center>
+                <img src="img/foto.png" width="40%">
+                <h2>NUR FALAH ABDURROZAQ</h2>
+                <p>Mahasiswa</p>
+            </center>
+            <div id="changeColor"><a href="#" title="Ganti Warna"><i class="fas fa-palette"></i></a></div>
+            <h4 id="waktu"></h4>
+            </div>
+    </section>
+
+    <!-- profile -->
+    <section class="profile"  id="profil">
+        <div class="container">
+            <h3 >PROFIL</h3>
+            <p>Saya adalah seorang mahasiswa yang memiliki ketertarikan di bidang IT. Saya memiliki karakter jujur, disiplin, tanggungjawab, dan tekun. Memiliki semangat belajar yang tinggi, senang mempelajari banyak hal, dan pekerja keras.</p>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about"  id="aboutme">
+        <div class="container">
+            <h3>TENTANG SAYA</h3>
+            <div class="box">
+                <div class="col-4">
+                    <div class="icon"><i class="fas fa-baby"></i></div>
+                    <h4>Banjarnegara, 7 April 2002</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fas fa-venus-mars"></i></div>
+                    <h4>Laki-laki</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Wirengan, Masaran, Masaran, Sragen</h4>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="far fa-calendar-alt"></i></div>
+                    <h4>19 Tahun</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education -->
+    <section class="education" id="education">
+        <div class="container">
+            <h3>RIWAYAT PENDIDIKAN</h3>
+            <div class="box">
+                <div class="col-2">
+                    <h4>SD</h4>
+                    <div class="tahun">2008 - 2014</div>
+                    <p>SD Negeri 3 Masaran</p>
+                </div>
+                <div class="col-2">
+                    <h4>SMP</h4>
+                    <div class="tahun">2014 - 2017</div>
+                    <p>SMP Negeri 1 Masaran</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="col-2">
+                    <h4>SMK</h4>
+                    <div class="tahun">2017 - 2020</div>
+                    <p>SMK Negeri 2 Sragen
+                        <div class="sub">Teknik Komputer dan Jaringan</div>
+                    </div>
+                    <div class="col-2">
+                        <h4>Perguruan Tinggi</h4>
+                        <div class="tahun">2020 - Sekarang</div>
+                    <p>Universitas Sebelas Maret</p> 
+                    <div class="sub">Fakultas Keguruan dan Ilmu Pendidikan <br> Pendidikan Teknik Informatika dan Komputer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill -->
+    <section class="skill" id="skill">
+        <div class="container">
+            <h3>KEMAMPUAN</h3>
+            <div class="kotak">
+                <h4>Networking</h4>
+                <div class="progress"><div class="value-70"></div></div>
+                <h4>Programing</h4>
+                <div class="progress"><div class="value-50"></div></div>
+                <h4>Design</h4>
+                <div class="progress"><div class="value-60"></div></div>
+                <h4>Office</h4>
+                <div class="progress"><div class="value-70"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience -->
+    <section class="experience" id="exp">
+        <div class="container">
+            <h3>PENGALAMAN KERJA</h3>
+            <h4>Juli - Desember 2019</h4>
+            <p>Praktek Kerja Industri di PT Telkom Indonesia wilayah Sragen</p>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h3>GALERI</h3>
+            <div class="box">
+                <div class="col-4"><img src="img/gallery1.jpg" alt="gallery1" width="100%" id="gallery1" onclick="changeBanner('gallery1')"></div>
+                <div class="col-4"><img src="img/gallery2.jpg" alt="gallery1" width="100%" id="gallery2" onclick="changeBanner('gallery2')"></div>
+                <div class="col-4"><img src="img/gallery3.jpg" alt="gallery1" width="100%" id="gallery3" onclick="changeBanner('gallery3')"></div>
+                <div class="col-4"><img src="img/gallery4.jpg" alt="gallery1" width="100%" id="gallery4" onclick="changeBanner('gallery4')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3>KONTAK</h3>
+            <div class="boxes">
+                <div class="col-3">
+                    <div class="icon"><i class="fas fa-mail-bulk"></i></div>
+                    <h4>rozaq924@gmail.com</h4>
+                </div>
+                <div class="col-3">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <h4>085155203747</h4>
+                </div>
+                <div class="col-3">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <h4>081327592974</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comment">
+        <div class="container">
+            <h3>KOMENTAR</h3>
+            <div id="form">
+                <form method="post" name="komentar">
+                    <h4>Nama</h4>
+                    <input type="text" name="namaorang" id="namaorang" size="38" placeholder="Masukan nama kamu" onfocus="fokus('namaorang')" onblur="danger('namaorang')">
+                    <h4>Email</h4>
+                    <input type="email" name="email" id="emailorang" size="38" placeholder="Masukan email" onfocus="fokus('emailorang')" onblur="danger('emailorang')">
+                    <h4>Pesan</h4>
+                    <textarea name="pesan" id="pesan" cols="40" rows="5" placeholder="Masukan Pesan" onfocus="fokus('pesan')" onblur="danger('pesan')"></textarea>
+                    <br>
+                    <br>
+                    <center>
+                        <input type="button" value="Kirim" id="kirim">
+                        <input type="reset" value="Reset" id="reset">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>
+                <small>Copyright &copy; 2021 - Nur Falah Abdurrozaq. All Rights Reserved.</small>
+            </p>
+            <div class="sosmed">
+            </div>
+            <ul>
+                <li><a href="https://facebook.com/nurfalah.abdurrozaq" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/nfarozaq59" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/6285155203747" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+:root {
+    --color: #3498DB;
+    --colorRGB: rgba(52, 152, 219, .5);
+    --bannerImg: url(../img/banner.jpg);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h4 {
+    color: black;
+}
+
+/* header */
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: var(--color);
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inherit;
+}
+header ul li a:hover {
+    background-color: var(--color);
+    color: #fff;
+}
+header ul li ul {
+    float: none;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 2px 2px 4px #ccc;
+}
+header ul li ul li {
+    display: none;
+    background-color: #fff;
+}
+header ul li:hover ul li {
+    display: block;
+    background-color: #fff;
+}
+header ul li ul li a {
+    padding: 25px 20px;
+    display: block;
+}
+.active {
+    background-color: var(--color);
+    color: #fff;    
+}
+
+/* banner */
+.banner {
+    height: 60vh;
+    background-image: var(--bannerImg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--colorRGB);
+} 
+
+#changeColor {
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    top: 80px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#waktu {
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    left: 10px;
+    color: white;
+}
+
+.profil {
+    z-index: 1;
+    color: #fff;
+}
+.profil p {
+    font-style: italic;
+    color: inherit;
+}
+.profil img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* content */
+/* profile   */
+section {
+    padding: 100px 0 50px 0;
+}
+section:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color);
+    margin-bottom: 25px;
+}
+.profile p {
+    word-spacing: 2px;
+    line-height: 25px;
+    color: #666;
+    text-align: center;
+}
+
+/* about me */
+.about .icon {
+    color: var(--color);
+}
+.about .box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-4 {
+    width: 25%;
+    float: left;
+}
+.col-4 .icon {
+    text-align: center;
+    font-size: 25px;
+}
+.col-4 h4 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* education */
+.education .box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-2 {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.tahun {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.education, p {
+    color: #666;
+}
+.col-2:nth-child(odd) {
+    text-align: right;
+    border-right: 3px solid var(--color);
+} 
+
+/* skill */
+.kotak {
+    width: 300px;
+    margin: 0 auto;
+}
+.progress {
+    margin: 10px 0;
+    width: 300px;
+    height: 20px;
+    background-color: var(--colorRGB);
+    border-radius: 100px;
+}
+.value-50 {
+    width: 50%;
+    height: inherit;
+    background-color: var(--color);
+    border-radius: 100px;
+}
+.value-60 {
+    width: 60%;
+    height: inherit;
+    background-color: var(--color);
+    border-radius: 100px;
+}
+.value-70 {
+    width: 70%;
+    height: inherit;
+    background-color: var(--color);
+    border-radius: 100px;
+}
+
+/* penalaman */
+.experience {
+    text-align: center;
+}
+.experience h4 {
+    padding-bottom: 10px;
+}
+
+/* galeri */
+section.gallery .col-4 {
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #eee;
+}
+section.gallery img:hover {
+    opacity: .7;
+}
+
+/* kontak */
+.boxes:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-3 {
+    width: 33%;
+    float: left;
+}
+.col-3 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: var(--color);
+    color: #fff;
+    margin: 0 auto;
+    line-height: 70px;
+}
+.col-3 h4 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    padding: 20px 0;
+    color: #fff;
+    background-color: #333;
+}
+footer p {
+    float: left;
+    color: white;
+}
+footer ul {
+    float: right;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li a {
+    display: inherit;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1110px){
+    #changeColor, #waktu {
+        top: 145px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        float: none;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    header ul {
+        float: none;
+        text-align: center;
+    }
+    footer p {
+        float: none;
+        text-align: center;
+    }
+    footer ul {
+        padding-top: 15px;
+        text-align: center;
+        float: none;
+    }
+
+    #changeColor, #waktu {
+        top: 140px;
+    }
+}
+@media screen and (max-width: 500px){
+    .container {
+        width: 90%;
+    }
+    header {
+        position: static;
+    }
+    header h1 {
+        float: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    header ul {
+        float: none;
+        text-align: center;
+    }
+    header ul li{
+        display: block;
+    }
+    header ul li ul{
+        display: none;
+    }
+    header ul li:hover ul{
+        display: none;
+    }
+    .banner h2 {
+        font-size: 20px;
+    }
+    .about .col-4, .gallery .col-4 {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact .col-3 {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer p {
+        float: none;
+        text-align: center;
+    }
+    footer ul {
+        padding-top: 15px;
+        text-align: center;
+        float: none;
+    }
+    #changeColor, #waktu {
+        top: 20px;
+    }
+}
